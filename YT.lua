@@ -50,7 +50,7 @@ local infoInFile = false
 		local _, strVer = m_simpleTV.Common.GetVersion()
 		local vlcVer = m_simpleTV.Common.GetVlcVersion()
 		if not (strVer:match('b12%.7%.7')
-			of strVer:match('b12%.7%.7 test')
+			or strVer:match('b12%.7%.7 test')
 			or strVer:match('b12%.7%.6'))
 			or vlcVer < 3000
 		then
